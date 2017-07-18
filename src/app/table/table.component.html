@@ -1,0 +1,17 @@
+<div class= "container">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+    <th>NUMBERS</th>
+    <th>NAMES </th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- number is  odd  then color  is  red and  number is  even color  is  green -->
+      <tr *ngFor="let person of PersonNames; let  i = index "[ngStyle]= "{'color': i%2==0 ? 'red':'green'}">
+        <td> {{i+1}}</td> <!-- numbers will display in table-->
+        <td>{{person}} </td><!-- names  display  in table -->
+         </tr>
+    </tbody>
+  </table>
+</div>
